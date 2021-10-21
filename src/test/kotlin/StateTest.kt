@@ -3,14 +3,6 @@ import io.kotest.core.test.TestCase
 import io.kotest.matchers.shouldBe
 import java.time.LocalDate
 
-abstract class MyFunSpec : FunSpec() {
-    private val date = LocalDate.now().atStartOfDay()!!
-
-    override fun beforeTest(testCase: TestCase) {
-        println("$date " + testCase.displayName)
-    }
-}
-
 class StateTest : MyFunSpec() {
 
     init {
