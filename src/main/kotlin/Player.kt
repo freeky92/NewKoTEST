@@ -7,24 +7,28 @@ class Player(
     private var nextLvlXP: Int = 10
 ) {
 
-    fun getStr() {
-        this.str
+    fun getName(): String {
+        return this.name
     }
 
-    fun getDex() {
-        this.dex
+    fun getStr(): Int {
+        return this.str
     }
 
-    fun getXP() {
-        this.XP
+    fun getDex(): Int {
+        return this.dex
     }
 
-    fun getLvl() {
-        this.lvl
+    fun getXP(): Int {
+        return this.XP
     }
 
-    fun getNextLvlXP() {
-        this.nextLvlXP
+    fun getLvl(): Int {
+        return this.lvl
+    }
+
+    fun getNextLvlXP(): Int {
+        return this.nextLvlXP
     }
 
     fun receiveXP(xp: Int) {
@@ -56,12 +60,14 @@ class Player(
 }
 
 fun main() {
-    val p1 = Player(name = "Monti", str = 2)
+    val p1 = Player()
     println(p1)
 
     p1.receiveXP(10000)
     println(p1)
 
     p1.receiveXP(500)
+    println(p1)
+
     println(p1)
 }

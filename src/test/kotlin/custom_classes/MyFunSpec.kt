@@ -8,7 +8,7 @@ abstract class MyFunSpec : FunSpec() {
     private val date = LocalDate.now().atStartOfDay()!!
 
     override fun beforeTest(testCase: TestCase) {
-        println("$date " + testCase.displayName)
+        println("$date " + testCase.displayName + "\n")
         super.beforeTest(testCase)
     }
 }
