@@ -1,7 +1,5 @@
-import io.kotest.core.spec.style.FunSpec
-import io.kotest.core.test.TestCase
+import custom_classes.MyFunSpec
 import io.kotest.matchers.shouldBe
-import java.time.LocalDate
 
 class StateTest : MyFunSpec() {
 

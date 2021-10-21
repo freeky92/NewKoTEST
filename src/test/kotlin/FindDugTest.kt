@@ -1,3 +1,4 @@
+import custom_classes.MyFunSpec
 import io.kotest.matchers.shouldBe
 
 class FindDugTest : MyFunSpec() {

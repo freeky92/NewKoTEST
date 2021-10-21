@@ -1,3 +1,5 @@
+package custom_classes
+
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.core.test.TestCase
 import java.time.LocalDate
