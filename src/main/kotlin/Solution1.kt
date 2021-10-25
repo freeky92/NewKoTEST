@@ -1,7 +1,7 @@
 class Solution1
 
-fun simpleSample(age: Int): String{
-    val state: String = when{
+fun simpleSample(age: Int): String {
+    val state: String = when {
         (age >= 0) && (age < 11) -> "child"
         (age >= 11) && (age < 18) -> "teen"
         (age >= 18) && (age < 25) -> "adult"

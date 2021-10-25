@@ -24,5 +24,18 @@ class CalculateEvenDigitTest : MyFunSpec() {
         }
     }
 
+    init {
+        test("CalcNullValues 1"){
+
+            val result = calcNullValues(arrayOf(82, null, null, null, null, null, 7, 55, null, 59, 4, 25, null,
+                null, 66, null, 3, 62, 55, null, 42, 5, 35, 8, null))
+            result shouldBe arrayOf(11, 508)
+            println(result.toList())
+        }
+    }
+
+
+
+
 }
 

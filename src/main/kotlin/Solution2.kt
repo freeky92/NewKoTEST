@@ -27,6 +27,19 @@ fun calculateBugMentions(input: List<String>): Int {
     return bugsCount
 }
 
+fun calcNullValues(input: Array<Int?>): Array<Int> {
+    var nullCount = 0
+    var sumOfInt = 0
+    for (i in input) {
+        if (i == null) {
+            nullCount++
+        } else {
+            sumOfInt += i
+        }
+    }
+    return arrayOf(nullCount, sumOfInt)
+}
+
 fun calculateWordStat(input: String): String {
 
     val words: List<String> = input.split(" ")
