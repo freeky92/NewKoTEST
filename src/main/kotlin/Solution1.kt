@@ -11,3 +11,9 @@ fun simpleSample(age: Int): String {
     }
     return state
 }
+
+fun listStringToListInt(str: String): List<Int> {
+    return str.split(" ").map { it.toInt() }
+}
+
+
