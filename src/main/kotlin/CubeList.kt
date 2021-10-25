@@ -10,5 +10,9 @@ fun getLength1(str: String?): Int? {
 }
 
 fun getLength2(str: String?): Int {
-    return str?.length?:0
+    return str?.length ?: 0
+}
+
+fun getLength3(str: String?): Int {
+    return str!!.length
 }
